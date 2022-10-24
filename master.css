@@ -1,13 +1,45 @@
 body{
-    background-color: #272b42;
-}
-#Pantalla_Carga h1{
-    color: blueviolet;
-    position: absolute;
+    background-color: #203555;
     display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: "entrada";
+    src: url(master/juego.ttf);
 }
 #Pantalla_Carga{
     display: flex;
+    position: absolute;
     height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#Pantalla_Carga h1{
+    font-family: "entrada";
+    color: blueviolet;
+    margin: 0;
     
+}
+
+#Juego{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Erro{
+    position: absolute;
+    bottom: 10%;
+}
+#Palabra{
+    position: absolute;
+    bottom: 20%;
 }
